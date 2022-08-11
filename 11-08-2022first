@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int n,r,product=1,sum=0,solution;
+    scanf("%d",&n);
+    while(n!=0)
+    {
+       r=n%10;
+        sum=sum+r;
+        product=product*r;
+        n=n/10;
+    }
+    solution=product-sum;
+    
+    printf("%d",solution);
+    return 0;
+}
