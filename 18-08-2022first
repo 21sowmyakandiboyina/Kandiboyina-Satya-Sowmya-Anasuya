@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+	int arr[]={20,3,5,45,63,4,2,33,45,2};
+	int len=sizeof(arr)/sizeof(int);
+	int i,n,count=0;
+	scanf("%d",&n);
+	for(i=0;i<len;i++)
+	{
+		if(arr[i]==n)
+		count++;
+	}
+	printf("\npresent %d times",count);
+	if(count==0)
+	{
+		printf("UNIQUE");
+	}
+	else
+	printf("DUPLICATE");
+}
