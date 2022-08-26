@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    char s1[40];
+    int size=0,flag=1,i;
+    printf("enter a string : ");
+    scanf("%s",s1);
+    for(i=0;s1[i]!='\0';i++)
+    {
+        size++;
+    }
+for(i=0;i<size/2;i++)
+{
+    if(s1[i]!=s1[size-1-i])
+    {
+        flag=0;
+        break;
+    }
+}
+if(flag==1)
+{
+    printf("palindrome");
+}
+else
+printf("not panlindrome");
+}
+
