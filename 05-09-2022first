@@ -1,0 +1,4 @@
+//print numbers between n and m without using for loop//
+#include<stdio.h>
+int main()
+{
