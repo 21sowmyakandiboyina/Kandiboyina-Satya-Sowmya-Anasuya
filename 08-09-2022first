@@ -3,7 +3,14 @@
 void update(int *a,int *b, int *j) {
   *j=*a;
   *a=*a+*b;
+  if(*j>*b)
+  {
+      *b=*j-*b;
+  }
+  else
+  {
   *b=*b-*j; 
+  }
 }
 
 int main() {
