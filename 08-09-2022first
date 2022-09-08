@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void update(int *a,int *b, int *j) {
+  *j=*a;
+  *a=*a+*b;
+  *b=*b-*j; 
+}
+
+int main() {
+    int a, b, j;
+    int *pa = &a, *pb = &b, *pj = &j;
+    
+    scanf("%d %d", &a, &b);
+    update(pa, pb, pj);
+    printf("%d\n%d", a, b);
+
+    return 0;
+}
