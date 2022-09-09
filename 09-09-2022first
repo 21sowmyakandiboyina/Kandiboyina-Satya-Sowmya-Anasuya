@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<Stdlib.h>
+struct node
+{
+int data;
+struct node *ref;
+};
+struct node *head;
+void binsert();
+begin
+void display();
+void main()
+{
+struct node *ptr;
+ptr=head;
+if(ptr==NULL)
+printf("elements in the list are....");
+while(ptr!=NULL)
+{
+printf("%d",ptr->data);
+ptr=ptr->ref;
+}
+}
+}
